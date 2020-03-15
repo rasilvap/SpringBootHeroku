@@ -43,4 +43,21 @@
             <version>2.8.0</version>
         </dependency>
     </dependencies>
+    <plugins>
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+            <mainClass>com.heroku.CityAutocompleteService</mainClass>
+        </configuration>
+
+        <executions>
+            <execution>
+                <goals>
+                    <goal>repackage</goal>
+                </goals>
+            </execution>
+       </executions>
+     </plugin>
+    </plugins>
 </project>
